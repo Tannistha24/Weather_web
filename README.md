@@ -53,7 +53,8 @@ Steps to Run Locally
 
 Clone the repository:
 
-git clone https://github.com/your-repo/weather-website.git
+git clone (https://github.com/Tannistha24/Weather_web.git)
+
 cd weather-website
 
 Install required dependencies:
