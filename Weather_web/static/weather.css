@@ -1,0 +1,424 @@
+
+#searchbtn{
+    font-size: 20px;
+    color: hsl(108, 31%, 52%);
+    background-color: rgb(42, 40, 40);
+    border:5px grooved;
+    border-radius:3px;
+    margin:auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#searchbtn:hover {
+    background-color: #514f4e;
+}
+input{
+    font-size: 20px;
+    background-color: hsl(180, 14%, 95%);
+    border:2px solid black;
+    border-radius: 3px;
+    outline: none;
+    margin-left: 5px;
+}
+input::placeholder {
+    color: hsl(120, 6%, 7%);
+}
+input:focus {
+    background-color: hsl(180, 29%, 94%); 
+    border-color: black; 
+}
+#weather{
+    font-size:20px;
+    margin : auto;
+    padding:5px;
+    border : 4px solid hsl(0, 0%, 1%);
+    border-radius:5px;
+}
+
+
+h1{
+    text-align: center;
+}
+
+h2{
+    margin-top: 100px; /* Push it down */
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(26, 24, 24); /* Change to black if needed */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Adds a shadow for visibility */
+
+    
+}
+
+.signbtn {
+    font-size: 20px;
+    color: hsl(220, 10%, 6%);
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: auto;
+    background-color: #f8f9fa;
+    transition: 0.3s;
+    text-decoration: none;
+    margin-left: 10px;
+    border-radius: 25px;
+}
+
+.signbtn a {
+    text-decoration: none;
+    color: #2e3237;
+    font-weight: bold;
+}
+
+.signbtn:hover {
+    background-color: hsl(0, 10%, 75%);
+    color: white;
+}
+
+.thin-header {
+    height:50;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('weather2.jpg');
+    background-size: 100% 100%; /* Stretches the image to cover the full screen */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    image-rendering: crisp-edges; /* Improves image sharpness */
+}
+
+#signinForm>h2{
+    text-align: center;
+    font-size: 50px;
+    display: block;
+    padding : 20px 15px;
+    margin: auto;
+    text-shadow: 2px 2px 10px hsl(0, 0%, 5%)
+}
+
+
+#username{
+    background-color: hsla(0, 0%, 0%, 0.103);
+    border: 3px solid hsl(0, 0%, 0%);
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px hsl(0, 1%, 14%)
+}
+
+#password{
+    background-color: hsla(0, 0%, 0%, 0.103);
+    border: 3px solid hsl(0, 0%, 0%);
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px hsl(0, 1%, 14%);
+}
+
+.header {
+    background-color: hsl(0, 14%, 1%);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    z-index: 1000;
+}
+
+.header button, .header input {
+    margin: 0 5px;
+}
+.input-btn-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between input and button */
+   
+}
+
+.cityInput {
+    flex: 1; /* Ensures input takes available space */
+    
+}
+
+
+button[type="submit"]{
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: hsl(130, 100%, 35%);
+    color: white;
+    border: none;
+    border-radius:15px;
+    cursor:pointer;
+    box-shadow: #333;
+
+}
+button[type="submit"]:hover{
+    background-color: hsl(130, 51%, 39%);
+    
+}
+.card {
+    background: rgba(255, 255, 255, 0.1); /* Light transparent white */
+    backdrop-filter: blur(10px); /* Blur effect to blend with background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.60);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1{
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom:25px;
+}
+p{
+    font-size: 1.5rem;
+    margin-bottom:5px 0;
+}
+
+.card{
+    background : linear-gradient(180deg,hsl(240, 91%, 45%),hsl(39, 100%, 50%));
+    background: rgba(255, 255, 255, 0.2);
+    padding:40px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.60);
+    display : flex;
+    flex-direction:column;
+    align-items:center;
+}
+.cityDisplay, .tempDisplay{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color:hsl(0, 8%, 7%);
+    margin-bottom:25px;
+}
+.humidityDisplay{
+    font-weight: bold;
+    margin-bottom:25px;
+}
+.descDisplay{
+    font-size: italic;
+    font-weight: bold;
+    font-size:2rem;
+}
+.weatherEmoji{
+    margin:0;
+    font-size:7.5rem;
+}
+.errorDisplay{
+    font-size: 2.5rem;
+    font-weight:bold;
+    color:black;
+}
+
+#map {
+    height: 600px; /* Adjust as needed */
+    width: 100%;
+}
+
+#pac-input {
+    margin-top: 10px;
+    width: 300px;
+    padding: 15px 5px;
+    font-size: 14px;
+    border-radius: 25px;
+}
+
+/* For Voice Assistance*/
+/* 🎤 Voice Button Styling */
+#voiceButton {
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: #068de7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#voiceButton:hover {
+    background-color: #526fe1;
+}
+
+/* 🎙️ Transcript Display */
+#transcript {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+.chat-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+}
+
+#chat-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#send-btn, #voice-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-btn {
+    background-color: #287e3c;
+    color: white;
+}
+
+#send-btn:hover {
+    background-color: #32aa4c;
+}
+
+#voice-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+#voice-btn:hover {
+    background-color: #0056b3;
+}
+
+.sign {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signin-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+h2 {
+    font-size: 50px; /* Increase text size */
+    font-weight: bold; /* Make it bold */
+    text-align: center; /* Center it horizontally */
+    position: absolute;
+    top: 20px; /* Adjust top position */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#password{
+    background-color: hsla(0, 0%, 0%, 0.103);
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px hsl(0, 1%, 28%);
+}
+#email{
+    background-color: hsla(0, 0%, 0%, 0.103);
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px hsl(0, 1%, 28%);
+}
+#name{
+    background-color: hsla(0, 0%, 0%, 0.103);
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px hsl(0, 1%, 28%);
+}
+button[type="submit"]{
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: hsl(130, 100%, 35%);
+    color: white;
+    border: none;
+    border-radius:15px;
+    cursor:pointer;
+    box-shadow: 2px 2px 5px hsl(0, 1%, 28%);
+
+}
+.logout{
+    font-size: 18px;
+    background-color: #b12d3a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-left: 15px;
+}
+.logout:hover {
+    background-color: #da2739;
+}
+.chat-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: auto;
+}
